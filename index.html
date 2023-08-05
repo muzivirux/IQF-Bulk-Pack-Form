@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IQF Bulk Pack form </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="./images/favico.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- wapdaAdding -->
+    <!-- <script>
+        function calculateTotal(peakFieldId, offPeakFieldId, totalFieldId) {
+            // Get the values of the two input fields
+            var peakValue = parseFloat(document.getElementById(peakFieldId).value);
+            var offPeakValue = parseFloat(document.getElementById(offPeakFieldId).value);
+
+            // Perform the addition
+            var totalValue = peakValue + offPeakValue;
+
+            // Set the result in the total field
+            document.getElementById(totalFieldId).value = totalValue;
+        }
+    </script> -->
+</head>
+
+<body>
+    <!-- Logo -->
+    <div class="logo">
+        <a href="https://rafiqfarmfoods.com/" target="_blank">
+            <img id="logoImg" src="/images/rff.png">
+        </a>
+    </div>
+
+    <!-- Form -->
+    <h1>IQF Bulk Pack form</h1>
+    <div id="line"></div>
+    <form id="WapdaConsumptionForm">
+        <!-- Wapda -->
+             <!-- first three -->
+            <div class="RSD">
+                <div class="wrapper">
+                <label for="RSD">Document No.</label>
+                
+                    <input type="number" required min="0" id="wapdapeak"
+                        name="Document No for bulk pack" required placeholder=""
+                    >
+                </div>
+                <div class="wrapper">
+                <label for="RSD">Rev No.</label>
+                    <input type="number" required min="0" id="wapdaoffpeak"
+                        name="Rev No for bulk pack" required
+                        placeholder="0">
+                </div>
+
+                <div class="wrapper">
+                    <label for="RSD">Effective Date</label>
+                    <input type="date" required min="0" id="wapdatotal"
+                        name="Effective date for bulk pack" required placeholder="">
+                </div>
+            </div>
+            <!-- second three -->
+            <div class="RSD">
+                <div class="wrapper">
+                    <label for="RSD"> Date</label>
+                    <input type="date" required min="0" id="wapdatotal"
+                        name="date for bulk pack" required placeholder="">
+                </div>
+                <div class="wrapper">
+                <label for="RSD">Shift</label>
+                    <input type="time" required min="0" id="wapdaoffpeakend"
+                        name="Shift of IQF" required
+                        placeholder="HH:MM">
+                </div>
+                <div class="wrapper">
+                    <label for="RSD">Product</label>
+                    <input type="text"  id="wapdatotalend"
+                        name="Product of bulk pack" required placeholder="Type here">
+                </div>
+            </div>
+
+                <!-- third three -->
+                <div class="RSD">
+                    <div class="wrapper">
+                        <label for="RSD">Vareity/Cut Size</label>
+                        
+                            <input type="number" id="gen1Units" name="Vareity/Cut Size" required
+                                placeholder="Type Here">
+                    </div>
+
+
+                    <div class="wrapper">
+                        <label for="RSD">Batch No.</label>
+                            <input type="number" id="gen1diesel" name= "Batch No for bulk pack" required
+                                placeholder="Type Here" min="0">
+                    </div>
+
+
+
+
+
+                    <div class="wrapper">
+                        <label for="RSD">Weight/Cotton</label>
+                            <input type="number" id="gen1diesel" name= "Weight/Cotton for bulk pack" required
+                                placeholder="Type Here" min="0">
+                    </div>
+                </div>
+
+                        
+                        <div class="RSD">
+
+                           <div class="wrapper">
+                        <label for="RSD">No of Cartons</label>
+                            <input type="number" id="gen1diesel" name= "No of Cartons bulk pack" required
+                                placeholder="Type Here" min="0">
+                    </div>
+
+
+                            <div class="wrapper">
+                        <label for="RSD">Total Weight(kg)</label>
+                            <input type="number" id="gen1diesel" name= "Total weight of bulk pack" required
+                                placeholder="Type Here" min="0">
+                    </div>
+
+
+                    <div class="wrapper">
+                        <label for="RSD">Counting Matrix</label>
+                            <input type="number" id="gen1diesel" name= "Counting matrix of bulk pack" required
+                                placeholder="Type Here" min="0">
+                    </div>
+                        </div>
+                        <!-- grand label -->
+
+                        <div class="RSD">
+
+                            <div class="wrapper1">
+                         <label for="RSD">Grand Total</label>
+                             <input type="number" id="gen1diesel" name= "Grand total of bulk pack" required
+                                 placeholder="Type Here" min="0">
+                     </div>
+                        </div>
+
+                       
+                        <!-- Cartons -->
+                       
+                            <h2>Cartons</h1>
+                                <div class="RSD">
+
+                                    <div class="wrapper">
+                                 <label for="RSD">B C/F</label>
+                                     <input type="number" id="gen1diesel" name= "B C/F for cartons" required
+                                         placeholder="Type Here" min="0">
+                             </div>
+         
+         
+                                     <div class="wrapper">
+                                 <label for="RSD">Issue</label>
+                                     <input type="number" id="gen1diesel" name= "Issued cartons" required
+                                         placeholder="Type Here" min="0">
+                             </div>
+         
+         
+                             <div class="wrapper">
+                                 <label for="RSD">Consumed</label>
+                                     <input type="number" id="gen1diesel" name= "Consumed  cartons" required
+                                         placeholder="Type Here" min="0"> 
+                             </div>
+                                </div> 
+
+                                <div class="RSD">
+
+                                    <div class="wrapper">
+                                 <label for="RSD">Waste</label>
+                                     <input type="number" id="gen1diesel" name= "Wasted cartons" required
+                                         placeholder="Type Here" min="0">
+                             </div>
+         
+         
+                                     <div class="wrapper">
+                                 <label for="RSD">Balance</label>
+                                     <input type="number" id="gen1diesel" name= "Balance cartons" required
+                                         placeholder="Type Here" min="0">
+                             </div>
+                                </div>
+                               
+                                <!-- bule poly bags -->
+                                <h2>Blue Poly Bags</h1>
+                                    <div class="RSD">
+    
+                                        <div class="wrapper">
+                                     <label for="RSD">B C/F</label>
+                                         <input type="number" id="gen1diesel" name= "B C/F for Blue Poly Bags" required
+                                             placeholder="Type Here" min="0">
+                                 </div>
+             
+             
+                                         <div class="wrapper">
+                                     <label for="RSD">Issue</label>
+                                         <input type="number" id="gen1diesel" name= "Blue Poly Bags" required
+                                             placeholder="Type Here" min="0">
+                                 </div>
+             
+             
+                                 <div class="wrapper">
+                                     <label for="RSD">Consumed</label>
+                                         <input type="number" id="gen1diesel" name= "Consumed  Blue Poly Bags" required
+                                             placeholder="Type Here" min="0"> 
+                                 </div>
+                                    </div> 
+    
+                                    <div class="RSD">
+    
+                                        <div class="wrapper">
+                                     <label for="RSD">Waste</label>
+                                         <input type="number" id="gen1diesel" name= "Wasted Blue Poly Bags" required
+                                             placeholder="Type Here" min="0">
+                                 </div>
+             
+             
+                                         <div class="wrapper">
+                                     <label for="RSD">Balance</label>
+                                         <input type="number" id="gen1diesel" name= "Balance Blue Poly Bags" required
+                                             placeholder="Type Here" min="0">
+                                 </div>
+                                    </div>
+                                   
+                                <!-- glove Consumed -->
+                               
+                                <h2>Glove Consumed Check Finish product after 30 mint</h1>
+                                    <div class="RSD">
+    
+                                        <div class="wrapper">
+                                     <label for="RSD">Time</label>
+                                         <input type="time" id="gen1diesel" name= "time for finish product" required
+                                             placeholder="Type Here" >
+                                 </div>
+             
+             
+                                         <div class="wrapper">
+                                     <label for="RSD">Temperature</label>
+                                         <input type="number" id="gen1diesel" name= "Blue Poly Bags" required
+                                             placeholder="Type Here" min="0">
+                                 </div>
+             
+             
+                                 <div class="wrapper">
+                                     <label for="RSD">Consumed</label>
+                                         <input type="number" id="gen1diesel" name= "Consumed  Blue Poly Bags" required
+                                             placeholder="Type Here" min="0"> 
+                                 </div>
+                                    </div> 
+                                    <!-- final labels -->
+                                    
+                        <div class="RSD">
+
+                            <div class="wrapper1">
+                         <label for="RSD">Shift last hour production hand over to next shift(kg)</label>
+                             <input type="number" id="gen1diesel" name= "Shift last hour production hand over to next shift(kg)" required
+                                 placeholder="Type Here" min="0">
+                     </div>
+                        </div>
+                        
+                        <div class="RSD">
+
+                            <div class="wrapper1">
+                         <label for="RSD">After IQF Sorting Waste(kg)</label>
+                             <input type="number" id="gen1diesel" name= "After IQF Sorting Waste(kg)" required
+                                 placeholder="Type Here" min="0">
+                     </div>
+                        </div>
+                        <div class="RSD">
+
+                            <div class="wrapper1">
+                         <label for="RSD">Remarks</label>
+                             <input type="text" id="gen1diesel" name= "Remarks for bulk pack" required
+                                 placeholder="Type Here" min="0">
+                     </div>
+                        </div>
+                               
+                                   
+
+                                <input type="submit" value="Submit">
+    </form>
+
+    <!-- spinner html -->
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+    <!-- end of spinner html -->
+
+    <!-- Add the modal HTML code -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <button id="closeBtn">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p><a href="https://rafiqfarmfoods.com/" target="_blank">Copyright &copy; Rafiq Farm Foods | All Right
+                Reserved. </a></p>
+    </footer>
+    <!-- end of Footer -->
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWS8gy1tdADo68wxZi1pcGmvqR5qGBZbsszw4VWv0qDTQBRp3bB8hhKKeculF6lp8hEg/exec';
+        const form = document.getElementById("WapdaConsumptionForm");
+
+        // modal javascript
+        // Get the modal element, the close button, and the close button inside the modal
+        const modal = document.getElementById("myModal");
+        const closeBtn = document.querySelector(".close");
+        const modalCloseBtn = document.getElementById("closeBtn");
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            modal.style.display = "block";
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    hideSpinner(); // Hide the spinner
+                    document.getElementById("modal-message").textContent = 'Success!';
+                })
+                .catch(error => {
+                    hideSpinner(); // Hide the spinner
+                    document.getElementById("modal-message").textContent = 'Error! ' + error.message;
+                });
+        });
+        // Close the modal when the close button is clicked
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+        // Close the modal when the close button inside the modal is clicked
+        modalCloseBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+
+    </script>
+
+
+    <!-- reseting form after submitting -->
+    <script>
+        document.getElementById('WapdaConsumptionForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            this.reset();
+
+
+
+        });
+
+    </script>
+    <!-- end of for reseting after submitting -->
+
+
+    <script>
+        // Function to show the spinner
+        function showSpinner() {
+            const spinnerContainer = document.querySelector(".spinner-container");
+            spinnerContainer.style.display = "flex";
+            modal.style.display = "none";
+        }
+
+        // Function to hide the spinner
+        function hideSpinner() {
+            const spinnerContainer = document.querySelector(".spinner-container");
+            spinnerContainer.style.display = "none";
+            modal.style.display = "block";
+        }
+
+        // Function to handle form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            showSpinner(); // Show the spinner
+
+        }
+
+        // Add event listener to form submit
+
+        form.addEventListener("submit", handleSubmit);
+    </script>
+    <!-- End of spinner -->
+
+
+
+    <!-- check time validations -->
+    <script>
+        // Get the input element
+        var durationInput = document.getElementById('availability-duration');
+        durationInput.addEventListener('change', function () {
+            durationInput.setCustomValidity('');
+            var value = durationInput.value;
+            var hours = parseInt(value.split(':')[0]);
+            var minutes = parseInt(value.split(':')[1]);
+            if (isNaN(hours) || isNaN(minutes) || minutes >= 60) {
+                durationInput.setCustomValidity('Please enter a valid duration in HH:MM format with hours under 23 and minutes under 60.');
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
