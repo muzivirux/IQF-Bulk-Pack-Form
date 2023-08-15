@@ -34,7 +34,7 @@
     <!-- Form -->
     <h1>IQF Bulk Pack form</h1>
     <div id="line"></div>
-    <form id="WapdaConsumptionForm">
+    <form id="IQFBulkPackForm">
         <!-- Wapda -->
              <!-- first three -->
             <div class="RSD">
@@ -305,8 +305,8 @@
 
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWS8gy1tdADo68wxZi1pcGmvqR5qGBZbsszw4VWv0qDTQBRp3bB8hhKKeculF6lp8hEg/exec';
-        const form = document.getElementById("WapdaConsumptionForm");
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzQ9B00gSGeWe3qmnu3EeNmP9SsMxvichbrZIDRSBG8_LzNg5Lp2ndEbLvzLPYHDaGR/exec';
+        const form = document.getElementById("IQFBulkPackForm");
 
         // modal javascript
         // Get the modal element, the close button, and the close button inside the modal
@@ -343,7 +343,7 @@
 
     <!-- reseting form after submitting -->
     <script>
-        document.getElementById('WapdaConsumptionForm').addEventListener('submit', function (event) {
+        document.getElementById('IQFBulkPackForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent the default form submission
 
             this.reset();
