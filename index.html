@@ -109,13 +109,12 @@
 
                     <div class="wrapper">
                         <label for="RSD">Counting Matrix</label>
-                        <div class="button" style="display: flex;justify-content: center;justify-items: center;">
-                            <input style="width:8rem" type="number" id="gen1diesel" name="IQFBulkPack Counting matrix"
-                            placeholder="" min="0" required>
-                            <input type="button" id="subtractionMatrix" name="IQFBulkPack Counting matrix"
-                                value="-">
-                                <input type="button" id="addingMatrix" name="IQFBulkPack Counting matrix" 
-                                value="+">
+                        <div class="number" style="display: flex;justify-content: center;justify-items: center;">
+                            <input style="width:8rem" type="number" id="inputMatrix" name="IQFBulkPack Counting matrix"
+                            placeholder="" min="0" value="0" required>
+                             <button id="addingMatrix">+</button>
+                            <button id="subtractionMatrix">-</button>
+                               
                     </div>
                     </div>
                         </div>
@@ -384,7 +383,19 @@
 
 <!-- counter Matrix buttons -->
 <script>
+    const inputField = document.getElementById('inputMatrix');
+    const addButton = document.getElementById('addingMatrix');
+    const subtractButton = document.getElementById('subtractionMatrix');
 
+    addButton.addEventListener('click', () => {
+        inputField.value = parseInt(inputField.value) + 1;
+    });
+
+    subtractButton.addEventListener('click', () => {
+        if (parseInt(inputField.value) > 0) {
+            inputField.value = parseInt(inputField.value) - 1;
+        }
+    });
 </script>
 <!-- end of counter Matrix buttons -->
 
