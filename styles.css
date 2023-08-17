@@ -55,17 +55,11 @@ form {
   display: flex;
   flex-direction: column;
 }
-.labelflx {
-  display: flex;
-  gap: 17rem;
-  margin-top: 1rem;
-}
+
 .wrapper {
   width: 100%;
 }
-.wrapper1 {
-  width: 100%;
-}
+
 .container {
   display: flex;
   gap: 17rem;
@@ -94,29 +88,22 @@ textarea {
 }
 #addingMatrix,
 #subtractionMatrix {
-  width: 2rem;
+  width: 4rem;
   border: none;
   background-color: #1a1a1a;
   color: #f8c807;
   border-radius: 4px;
   margin-top: 0.2rem;
+  /* font-size: 1.2rem; */
   box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
+/* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-#phone {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+} */
 
 input[type="submit"] {
   margin-top: 2rem;
@@ -136,41 +123,6 @@ input[type="submit"]:hover {
 .RSD {
   display: flex;
   gap: 1rem;
-}
-/* dropdown */
-
-.options li {
-  height: 50px;
-  padding: 0 13px;
-  font-size: 21px;
-}
-.options li:hover,
-li.selected {
-  border-radius: 5px;
-  background: #f2f2f2;
-}
-
-.location {
-  display: flex;
-
-  width: 100%;
-}
-.location button {
-  width: 50rem;
-  margin: 1rem 0 1rem 0;
-  background-color: #f8c807;
-  border: 3px solid black;
-  color: black;
-  cursor: pointer;
-  font-weight: 700;
-  border-radius: 0.4rem;
-  transition: background-color 0.3s;
-}
-.location button:hover {
-  background-color: #e88228;
-}
-.location input {
-  margin: 1rem 3rem 1rem 0;
 }
 
 .sections {
@@ -376,9 +328,7 @@ li.selected {
   body::before {
     display: none;
   }
-  spline-viewer {
-    display: none;
-  }
+
   .RSD {
     display: flex;
     flex-wrap: wrap;
