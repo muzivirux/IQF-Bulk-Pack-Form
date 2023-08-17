@@ -21,62 +21,62 @@
     <div id="line"></div>
     <form id="IQFBulkPackForm">
         <!-- Wapda -->
-             <!-- first three -->
+             <!-- first module -->
             <div class="RSD">
                 <div class="wrapper">
                 <label for="RSD">Document No.</label>
                 
-                    <input type="number" required min="0" id="wapdapeak"
-                        name="IQFBulkPack Document No" required placeholder="Enter Document No"
+                    <input type="number" min="0" id="wapdapeak"
+                        name="IQFBulkPack Document No" placeholder="Enter Document No" required
                     >
                 </div>
                 <div class="wrapper">
                 <label for="RSD">Rev No.</label>
-                    <input type="number" required min="0" id="wapdaoffpeak"
-                        name="IQFBulkPack Rev No" required
-                        placeholder="Enter Rev No">
+                    <input type="number" min="0" id="wapdaoffpeak"
+                        name="IQFBulkPack Rev No"
+                        placeholder="Enter Rev No" required>
                 </div>
 
                 <div class="wrapper">
                     <label for="RSD">Effective Date</label>
-                    <input type="date"  id="wapdatotal"
-                        name="IQFBulkPack Effective date" required placeholder="">
+                    <input type="date" id="wapdatotal"
+                        name="IQFBulkPack Effective date" required>
                 </div>
             </div>
-            <!-- second three -->
+            <!-- second module -->
             <div class="RSD">
                 <div class="wrapper">
                     <label for="RSD">Date</label>
-                    <input type="date"  id="wapdatotal"
-                        name="IQFBulkPack date" required placeholder="">
+                    <input type="date" id="wapdatotal"
+                        name="IQFBulkPack date" required>
                 </div>
                 <div class="wrapper">
                 <label for="RSD">Shift</label>
-                    <input type="time"  id="wapdaoffpeakend"
+                    <input type="time" id="wapdaoffpeakend"
                         name="IQFBulkPack Shift" required
-                        placeholder="HH:MM">
+                        >
                 </div>
                 <div class="wrapper">
                     <label for="RSD">Product</label>
-                    <input type="text"  id="wapdatotalend"
+                    <input type="text" id="wapdatotalend"
                         name="IQFBulkPack Product" required placeholder="Enter Product">
                 </div>
             </div>
 
-                <!-- third three -->
+                <!-- third module -->
                 <div class="RSD">
                     <div class="wrapper">
                         <label for="RSD">Vareity/Cut Size</label>
                         
-                            <input type="number" id="gen1Units" name="IQFBulkPack Vareity/Cut Size" required
-                                placeholder="Enter Vareity/Cut Size">
+                            <input type="number" id="gen1Units" name="IQFBulkPack Vareity/Cut Size"
+                                placeholder="Enter Vareity/Cut Size" required>
                     </div>
 
 
                     <div class="wrapper">
                         <label for="RSD">Batch No.</label>
-                            <input type="number" id="gen1diesel" name= "IQFBulkPack Batch No" required
-                                placeholder="Enter Batch No" min="0">
+                            <input type="number" id="gen1diesel" name="IQFBulkPack Batch No"
+                                placeholder="Enter Batch No" min="0" required>
                     </div>
 
 
@@ -85,8 +85,8 @@
 
                     <div class="wrapper">
                         <label for="RSD">Weight/Cotton</label>
-                            <input type="number" id="gen1diesel" name= "IQFBulkPack Weight/Cotton" required
-                                placeholder=" Enter Weight/Cotton" min="0">
+                            <input type="number" id="gen1diesel" name="IQFBulkPack Weight/Cotton"
+                                placeholder=" Enter Weight/Cotton" min="0" required>
                     </div>
                 </div>
 
@@ -95,66 +95,56 @@
 
                            <div class="wrapper">
                         <label for="RSD">No of Cartons</label>
-                            <input type="number" id="gen1diesel" name= "IQFBulkPack No of Cartons" required
-                                placeholder="Enter No of Cartons" min="0">
+                            <input type="number" id="gen1diesel" name="IQFBulkPack No of Cartons"
+                                placeholder="Enter No of Cartons" min="0" required>
                     </div>
 
 
                             <div class="wrapper">
                         <label for="RSD">Total Weight(kg)</label>
-                            <input type="number" id="gen1diesel" name= "IQFBulkPackTotal weight(kg)" required
-                                placeholder="Enter Total Weight(kg)" min="0">
+                            <input type="number" id="gen1diesel" name="IQFBulkPackTotal weight(kg)"
+                                placeholder="Enter Total Weight(kg)" min="0" required>
                     </div>
 
 
                     <div class="wrapper">
                         <label for="RSD">Counting Matrix</label>
                         <div class="button" style="display: flex;justify-content: center;justify-items: center;">
-                            <input type="number" id="gen1diesel" name= "IQFBulkPack Counting matrix" required
-                            placeholder="" min="0" style="width:8rem">
-                            <input type="button" id="gen1diesel" name= "IQFBulkPack Counting matrix" required
-                                placeholder="" value="-">
-                                <input type="button" id="gen1diesel" name= "IQFBulkPack Counting matrix" required
-                                placeholder="" value="+">
-                               
-                        </div>
+                            <input style="width:8rem" type="number" id="gen1diesel" name="IQFBulkPack Counting matrix"
+                            placeholder="" min="0" required>
+                            <input type="button" id="subtractionMatrix" name="IQFBulkPack Counting matrix"
+                                value="-">
+                                <input type="button" id="addingMatrix" name="IQFBulkPack Counting matrix" 
+                                value="+">
+                    </div>
                     </div>
                         </div>
-                        <!-- grand label -->
-
-                        <div class="RSD">
-
-                            <div class="wrapper1">
+     
                          <label for="RSD">Grand Total</label>
-                             <input type="number" id="gen1diesel" name= "IQFBulkPack Grand total" required
-                                 placeholder="Enter Grand Total" min="0">
-                     </div>
-                        </div>
+                             <input type="number" id="gen1diesel" name="IQFBulkPack Grand total"
+                                 placeholder="Enter Grand Total" min="0" required>
 
                        
-                        <!-- Cartons -->
-                       
-                            <h2>Cartons</h1>
+                            <h2>Cartons</h2>
                                 <div class="RSD">
-
                                     <div class="wrapper">
                                  <label for="RSD">B C/F</label>
-                                     <input type="number" id="gen1diesel" name= "IQFBulkPack B C/F for Cartons" required
-                                         placeholder="Enter B C/F" min="0">
+                                     <input type="number" id="gen1diesel" name="IQFBulkPack B C/F for Cartons"
+                                         placeholder="Enter B C/F" min="0" required>
                              </div>
          
          
                                      <div class="wrapper">
                                  <label for="RSD">Issue</label>
-                                     <input type="number" id="gen1diesel" name= "IQFBulkPack Issue  for Cartons" required
-                                         placeholder="Enter Issue" min="0">
+                                     <input type="number" id="gen1diesel" name="IQFBulkPack Issue  for Cartons"
+                                         placeholder="Enter Issue" min="0" required>
                              </div>
          
          
                              <div class="wrapper">
                                  <label for="RSD">Consumed</label>
-                                     <input type="number" id="gen1diesel" name= "IQFBulkPack Consume for Cartons" required
-                                         placeholder="Enter Consumed" min="0"> 
+                                     <input type="number" id="gen1diesel" name="IQFBulkPack Consume for Cartons"
+                                         placeholder="Enter Consumed" min="0" required> 
                              </div>
                                 </div> 
 
@@ -162,15 +152,15 @@
 
                                     <div class="wrapper">
                                  <label for="RSD">Waste</label>
-                                     <input type="number" id="gen1diesel" name= "IQFBulkPack Waste for Cartons" required
-                                         placeholder="Enter Waste" min="0">
+                                     <input type="number" id="gen1diesel" name="IQFBulkPack Waste for Cartons"
+                                         placeholder="Enter Waste" min="0" required>
                              </div>
          
          
                                      <div class="wrapper">
                                  <label for="RSD">Balance</label>
-                                     <input type="number" id="gen1diesel" name= "IQFBulkPack Balance for Cartons" required
-                                         placeholder="Enter Balance" min="0">
+                                     <input type="number" id="gen1diesel" name="IQFBulkPack Balance for Cartons"
+                                         placeholder="Enter Balance" min="0" required>
                              </div>
                                 </div>
                                
@@ -180,23 +170,23 @@
     
                                         <div class="wrapper">
                                      <label for="RSD">B C/F</label>
-                                         <input type="number" id="gen1diesel" name= "IQFBulkPack B C/F for Blue Poly Bags" required
-                                             placeholder="Enter B C/F" min="0">
+                                         <input type="number" id="gen1diesel" name="IQFBulkPack B C/F for Blue Poly Bags"
+                                             placeholder="Enter B C/F" min="0" required>
                                  </div>
              
              
                                          <div class="wrapper">
                                      <label for="RSD">Issue</label>
-                                         <input type="number" id="gen1diesel" name= "IQFBulkPack Issue for Blue Poly Bags" required
-                                             placeholder="Enter Issue" min="0">
+                                         <input type="number" id="gen1diesel" name="IQFBulkPack Issue for Blue Poly Bags"
+                                             placeholder="Enter Issue" min="0" required>
                                  </div>
              
              
                                  <div class="wrapper">
                                      <label for="RSD">Consumed</label>
                                      
-                                     <input type="number" id="gen1diesel" name= "IQFBulkPack Consume for Blue Poly Bags" required
-                                     placeholder="Enter Consumed" min="0">  
+                                     <input type="number" id="gen1diesel" name="IQFBulkPack Consume for Blue Poly Bags"
+                                     placeholder="Enter Consumed" min="0" required>  
                                  </div>
                                     </div> 
     
@@ -204,41 +194,39 @@
     
                                         <div class="wrapper">
                                      <label for="RSD">Waste</label>
-                                         <input type="number" id="gen1diesel" name= "IQFBulkPack Waste for Blue Poly Bags" required
-                                             placeholder="Enter Waste" min="0">
+                                         <input type="number" id="gen1diesel" name="IQFBulkPack Waste for Blue Poly Bags"
+                                             placeholder="Enter Waste" min="0" required>
                                  </div>
              
              
                                          <div class="wrapper">
                                      <label for="RSD">Balance</label>
-                                         <input type="number" id="gen1diesel" name= "IQFBulkPack Balance for Blue Poly Bags" required
-                                             placeholder="Enter Balance" min="0">
+                                         <input type="number" id="gen1diesel" name="IQFBulkPack Balance for Blue Poly Bags"
+                                             placeholder="Enter Balance" min="0" required>
                                  </div>
                                     </div>
-                                   
-                                <!-- glove Consumed -->
+
                                
-                                <h2>Glove Consumed Check Finish product after 30 mint</h1>
+                                <h3>Glove Consumed Check Finish product after 30 mint</h3>
                                     <div class="RSD">
     
                                         <div class="wrapper">
                                      <label for="RSD">Time</label>
                                          <input type="time" id="gen1diesel" name= "IQFBulkPack time after 30 mint" required
-                                             placeholder="" >
+                                             >
                                  </div>
-             
-             
+    
                                          <div class="wrapper">
                                      <label for="RSD">Temperature</label>
-                                         <input type="text" id="gen1diesel" name= "IQFBulkPack Temperature" required
-                                             placeholder="Enter Temperature" min="0">
+                                         <input type="text" id="gen1diesel" name="IQFBulkPack Temperature" 
+                                             placeholder="Enter Temperature" min="0" required>
                                  </div>
              
              
                                  <div class="wrapper">
                                      <label for="RSD">Production Rate</label>
-                                         <input type="number" id="gen1diesel" name= "IQFBulkPack Production Rate after 30 mint" required
-                                             placeholder="Enter Production Rate" min="0"> 
+                                         <input type="number" id="gen1diesel" name="IQFBulkPack Production Rate after 30 mint"
+                                             placeholder="Enter Production Rate" min="0" required> 
                                  </div>
                                     </div> 
                                     <!-- final labels -->
@@ -247,8 +235,8 @@
 
                             <div class="wrapper1">
                          <label for="RSD">Shift last hour production hand over to next shift(kg)</label>
-                             <input type="number" id="gen1diesel" name= "IQFBulkPack Shift last hour production hand over to next shift(kg)" required
-                                 placeholder="Enter Shift last hour production hand over to next shift(kg)" min="0">
+                             <input type="number" id="gen1diesel" name="IQFBulkPack Shift last hour production hand over to next shift(kg)"
+                                 placeholder="Enter Shift last hour production hand over to next shift(kg)" min="0" required>
                      </div>
                         </div>
                         
@@ -256,16 +244,16 @@
 
                             <div class="wrapper1">
                          <label for="RSD">After IQF Sorting Waste(kg)</label>
-                             <input type="number" id="gen1diesel" name= "IQFBulkPack After IQF Sorting Waste(kg)" required
-                                 placeholder="Enter After IQF Sorting Waste(kg) " min="0">
+                             <input type="number" id="gen1diesel" name="IQFBulkPack After IQF Sorting Waste(kg)"
+                                 placeholder="Enter After IQF Sorting Waste(kg) " min="0" required>
                      </div>
                         </div>
                         <div class="RSD">
 
                             <div class="wrapper1">
                          <label for="RSD">Remarks</label>
-                             <input type="text" id="gen1diesel" name= "IQFBulkPack Remarks" required
-                                 placeholder="Enter Remarks" min="0">
+                             <input type="text" id="gen1diesel" name= "IQFBulkPack Remarks"
+                                 placeholder="Enter Remarks" min="0" required>
                      </div>
                         </div>
                                
@@ -380,7 +368,7 @@
 
 
     <!-- check time validations -->
-    <script>
+    <!-- <script>
         // Get the input element
         var durationInput = document.getElementById('availability-duration');
         durationInput.addEventListener('change', function () {
@@ -392,8 +380,13 @@
                 durationInput.setCustomValidity('Please enter a valid duration in HH:MM format with hours under 23 and minutes under 60.');
             }
         });
-    </script>
+    </script> -->
 
+<!-- counter Matrix buttons -->
+<script>
+
+</script>
+<!-- end of counter Matrix buttons -->
 
 </body>
 

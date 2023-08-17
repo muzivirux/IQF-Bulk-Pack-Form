@@ -43,7 +43,8 @@ h1 {
   margin-top: 8rem;
 }
 
-h2{
+h2,
+h3 {
   margin-top: 2rem;
 }
 
@@ -89,8 +90,7 @@ textarea {
   outline: none;
   color: #1a1a1a;
   background-color: #f8c807;
-  margin-top: .2rem;
-  
+  margin-top: 0.2rem;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -122,9 +122,9 @@ input[type="submit"]:hover {
   color: #e88228;
 }
 
-.RSD{
+.RSD {
   display: flex;
-gap: 1rem;  
+  gap: 1rem;
 }
 /* dropdown */
 
@@ -386,6 +386,4 @@ li.selected {
   #locationBtn {
     font-size: 1rem;
   }
-
 }
-
